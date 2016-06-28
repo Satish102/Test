@@ -1,0 +1,452 @@
+/*
+    Document    : fostercare.css
+    Created on  : Oct 01,2015
+    Author      : Satish, Veena, Blessy
+    Description : The document includes css of the Foster Care website
+ */
+
+body {
+    overflow-x: hidden;
+
+}
+
+header{
+    height:auto;
+}
+
+.wrapper{ /*content wrapper*/
+    width:1140px;
+    margin:auto;
+    height:auto;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+section {
+    padding: 110px 0;
+    min-height:850px;
+}
+
+footer {
+    
+    background-color: #233140;
+    width:100%;
+}
+
+.footer_font{
+    color: #fff;
+    padding: 25px 0;
+}
+ #nice{ /*add counsellor section in script*/
+    margin-top:25px;
+    position: relative;
+
+ }
+#adddetails{ /*add councellor */
+    margin-top:50px;
+
+}
+
+.submit{ /*submit button of add counsellor*/
+    margin-top:40px;
+
+}
+.cancel{ /*cancel button of add counsellor*/
+    margin-top:40px;
+    float:right;
+}
+
+.addcoun{ /*input fields of add councellor*/
+    float:right;
+}
+
+.coun{/* heading add councellor*/
+    margin-bottom:30px;
+}
+.photo{ /*add counsellor photo*/
+    margin-top:40px;
+}
+
+.choose{ /*choose pic to upload*/
+    margin-right:50px;
+
+}
+
+#add{ /*add counsellor section*/
+  float:left;
+}
+
+#preview{ /*add counsellor image preview*/
+    width:200px;
+    height: 200px;
+    margin:auto;
+    margin-top:25px;
+}
+
+#logout{ /*logout of add counsellor*/
+    margin-top: 20px;
+    float:left;
+    
+}
+
+#profile{ /*profile button add councellor*/
+   float:right;
+    margin-top: 20px;
+}
+
+@font-face {
+  font-family: jumbotronFont;
+  src: url("Fonts/Khadija.ttf");
+}
+
+#jumbotron{/*imported font*/
+  font-size: 16px;
+  font-family: jumbotronFont;
+}
+
+@font-face{
+  font-family: myFirstFont;
+  src: url("Fonts/Blackfat Demo.ttf");
+}
+
+#jumbotronHeading{/*imported font*/
+  font-family: myFirstFont;
+}
+  
+body{
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+a{/*anchor tag*/
+  text-decoration: none; 
+}
+
+#login{
+  margin: auto auto;
+  width: 300px;
+}
+
+#formSuperAdmin{
+  border: solid 1px;
+  width: 310px;
+  padding: 13px;
+}
+
+#formSuperAdmin fieldset input[type="text"], input[type="password"] {
+  background-color: #e5e5e5;
+  border-color: transparent;
+  border-radius: 4px;
+  color: #5a5656;
+  font-size: 14px;
+  height: 50px;
+  padding: 0px 10px;
+  width: 280px;
+}
+
+#formSuperAdmin fieldset a {
+  color: #5a5656;
+  font-size: 10px;
+}
+
+#loginButton{
+  width: 220px;
+  margin-left: 30px;
+}
+
+.flip-container {
+  perspective: 1000; 
+} 
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {/*front and back tiles*/
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.flipper {/*common for 3 tiles*/
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back{/*front and back tiles*/
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  border-radius: 20px !important;
+}
+
+.front{/*front tile*/
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back{/*back tile*/
+  transform: rotateY(180deg);
+  margin-left: -30px;
+}
+
+.agencyCounsImg{/*for agency & counselors*/
+  width: 80px;
+  height: 80px;
+  border-radius: 20px !important;
+  margin-top: 60px; 
+}
+
+#attorneyImg{/*attorney image*/
+  width: 80px;
+  height: 80px;
+  margin-top: 54px;  
+  border-radius: 20px !important;
+}
+
+#tileDiv{ /*div with 3 tiles in html*/
+  margin-top: 200px;
+}
+
+#frontCounselor{/*front tile for counselor*/
+  background-color: black;
+}
+
+#backCounselor{/*back tile for counselor*/
+  background-color: #CCCCFF;
+}
+
+#frontAgency{/*front tile for agency*/
+  background-color: #ff7b62;    
+}
+
+#backAgency{/*back tile for agency*/
+  background-color: #b5ce71;
+}
+
+#frontAttorney{/*front tile for attorney*/
+  background-color:#00bfff;
+}
+
+#backAttorney{/*back tile for attorney*/
+  background-color:#66FFCC;
+}
+
+.ones, .two, .three{
+  position: absolute;
+  bottom: 11px;
+  right: 14px;
+  font-size: 24px;
+}
+
+.two{
+  color:#FFFFFF;
+}
+
+.three{
+  color: #CC00FF;
+}
+
+@font-face {
+  font-family: tileFont;
+  src: url("Fonts/Blacktroops Inline.ttf");
+}
+
+.tileBackHead{/*imported font*/
+  font-family: tileFont;
+}
+
+@font-face {
+  font-family: tileFrontHeadFont;
+  src: url("Fonts/BackToSchool.ttf");
+}
+
+.tileFrontHead{/*heading in front tiles*/
+  left: 9px;
+  bottom: 5px;
+  color: white;
+  position: absolute;
+  font-family: tileFrontHeadFont;
+}
+
+#superAdminBody{
+  background-color: green;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 639px){
+  .container{
+    width: 320px;
+    height: auto;
+  }
+
+  .flip-container, .front, .back {
+    width: 120px;
+    height: 180px;
+    text-align: center;
+  }
+
+  #attorneyDiv, #frontAttorney, #backAttorney{
+    width: 265px; 
+    margin-top: 20px;  
+    margin-left: 0px;
+  }
+
+  .one, .two, .three{
+    display: none;
+  } 
+
+  #tileDiv{ 
+    margin-top: 100px;   
+  }
+
+  .tileBackContent{
+    display: none;
+  }
+  .tileBackHead{
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 640px) and (max-width : 959px){
+   section {
+        padding: 75px 0;
+    }
+    
+    .navbar-fixed-top {
+        padding: 12px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+  .container{
+    width: 620px;
+    height: auto;
+  }
+
+  .flip-container, .front, .back {
+    width: 245px;
+    height: 240px;
+    text-align: center;  
+  }
+
+ #attorneyDiv, #frontAttorney, #backAttorney{
+    width: 540px; 
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .one, .two, .three{
+    display: none;
+  }  
+
+  .two{
+    display: none;
+  }
+
+  .three{
+    display: none;
+  }
+  
+  #tileDiv{ 
+  margin-top: 165px;
+  }
+
+  .two{
+    display: none;
+  }
+
+  .three{
+    display: none;
+  }
+
+  #tileDiv{ 
+  margin-top: 165px;
+  }
+
+  .wrapper{ /*content wrapper*/
+      width:575px;
+    }
+}
+
+@media only screen and (min-width : 960px) and (max-width : 1299px){
+  .container{
+    width: 945px;
+    height: auto;
+  }
+
+  .flip-container, .front, .back {
+  width: 228px;
+  height: 300px;
+  text-align: center;
+  }
+
+  .wrapper{ /*content wrapper*/
+      width:910px;
+    }
+  }
+
+@media only screen and (min-width : 1300px){
+  .container{
+  width: 1260px;
+  height: auto;
+  }  
+
+  .flip-container, .front, .back {
+  width: 300px;
+  height: 315px;
+  text-align: center;
+  }
+  
+}
+
+#nameAgeGen{/*name, age,gender*/
+  float: left;
+  width: 200px;
+  height: 280px;
+  font-size: 15px;
+}
+
+#statusPlacePublish{/*status,place,is published*/
+  float:right;
+  width: 200px;
+  height: 280px;
+  font-size: 15px;
+  margin-right: 300px;
+}
+
+#clearFloat{/*clear float*/
+  clear: both;
+}
+
+.childListHead{/*headings in child list*/
+  color: green;
+  font-size: 17px;
+}
+

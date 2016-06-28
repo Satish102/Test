@@ -1,0 +1,1803 @@
+/*
+    Document    : fostercare.css
+    Created on  : Oct 14,2015
+    Author      : Veena,Blessy
+    Description : The document includes css of the Foster Care website
+ */
+
+body{
+  background-color: #EFEEF3;
+  font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size:12px;
+  color:#808080;
+}
+
+.wrapper{ /*content wrapper*/
+  max-width:1366px;
+  width:100%;
+  margin:auto;
+  height:auto;
+  overflow: hidden;
+}
+
+.ag_logo, .coun_logo, .atto_logo, .prof_img, .dropdown_img, .go_nextpage, .imgactive, .searchicon, .logouticon, .reseticon, .dropuparrow{   /*sprite image*/
+  background: url("../images/sprite_fostercare.png");
+}
+
+header{
+  background-color: #F6F6F6;
+}
+
+.headsection{
+  height:90px;
+  padding:20px 35px;
+  padding-right:30px;
+}
+
+#logo{ /*header logo*/
+   float:left;
+  }
+
+.logo_font{ /*logo font*/
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 32px;
+}
+
+#logo_foster{ /*font for foster*/
+  color:#36A5DD;
+  font-weight:regular;
+}
+
+#logo_care{ /*font for care*/
+  color:#F06BA4;
+}
+
+#loginButton{/*login button*/
+  background-color: #F06BA4;   
+  bottom: -8px;
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+  height:40px;
+  border:none;
+  font-weight:normal;
+
+
+
+
+  color: #FFF;
+}  
+
+.unamePswdText{ /*text - username, password*/  
+  color: #666666;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#unamePswdDiv{/*div with username,password*/
+  background-color: #FFFFFF;  
+  padding: 0;
+  margin: auto;
+  border: 0;
+  width: 308px;
+  height: 362px;
+}
+
+
+#loginBlue{/*Blue colored div in login*/
+  width: 410px;
+  height: 48px;
+  background-color: #38A5DE;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 12px;
+  font-size: 18px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; 
+  font-weight:bold; 
+}
+
+#greyDiv{/*grey colored div in login*/
+  background-color: #EFEEF3;
+  width: 410px;
+  height:6px ;
+
+}
+
+#forgotPswd{/*forgot password*/
+  float: right; 
+  margin-top: 27px;
+  font-size: 12px;
+  color: #888888;
+  cursor:pointer;
+}
+
+#copyRight{/*copyright*/
+  color: #9eb3ba;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 21px;
+
+}
+
+#LoginWrapper{/*entire DIVs on login page*/ 
+  width: 410px;
+  height: auto;
+  margin: auto;
+  vertical-align:middle; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+#staySignedText{/*staysigned in*/
+  margin-top: 17px;
+  margin-left: 10px;
+
+}
+
+#fosterCareText{/*text -"FosterCare"*/
+  text-align: center;
+  margin-bottom: 15px;  
+
+}
+
+.form-control {/* input fields*/
+  color: #bcbcbc;
+  font-size: 14px; 
+  width:100%;
+  height:43px;
+  max-width:345px;
+  padding:5px 12px;
+  border: 1px solid #E2E2E2;
+
+}            
+
+.admindetails{   /* header profile name and image*/
+  position: relative;
+  float:right;
+}
+
+.prof_img{ /*header profile image*/
+  position:relative;
+  float:left;
+  width: 59px;
+  height: 50px;
+  background-position:0px 115px;
+
+}
+
+.prof_name{ /*header profile name*/
+  position:relative;
+  float:left;
+  margin-top:18px;
+  color:#7b7b7b;
+  font-size:14px;
+  overflow:hidden;
+ 
+}
+
+.dropdown{ /*dropdown */
+  margin-top:-9px;
+  float:left;
+}
+
+.dropdown-menu{ /*dropdown menu*/
+  width:240px;
+  height:94px;
+  background-color:#3c6775;
+  color:#fff;
+  font-size:12px;
+  font-weight:bold;
+  border-radius:5px;
+  left:inherit;
+  right:-10px;
+  margin-top:12px;
+
+}
+
+.droplist{ /*dropdown list*/
+  padding:13px 10px;
+  height:41px;
+  color:#bbcacf;
+  cursor: pointer;
+}
+
+.droplist:hover{ /*dropdown list hover*/
+  background-color:#466f7e;
+  color:#fff;
+
+}
+
+.dropdown_img{ /*dropdown image*/
+  position:relative;
+  display:inline-block ;
+  margin-top:35px;
+  width: 16px;
+  height: 8px;
+  background-position:-85px -66px;
+
+}
+
+.dropuparrow{ /*up arrow for dropdown menu*/
+  position:absolute;
+  width: 19px;
+  height: 10px;
+  background-position:-132px -66px;
+  top:-10px;
+  right:25px;
+
+}
+
+#dLabel{/* dropdown pic*/
+  margin-left:18px;
+
+}
+
+.reseticon{ /*reset password icon in header*/
+  position:relative;
+  width: 14px;
+  height: 16px;
+  background-position:-10px -66px;
+  margin-right:30px;
+  float:left;
+
+}
+
+.logouticon{ /*logout icon in header*/
+  position:relative;
+  width: 16px;
+  height: 17px;
+  background-position:-59px -66px;
+  margin-right:30px;
+  float:left;
+
+}
+
+#content{ /*content section*/
+  width:100%;
+  height:auto;
+
+}
+
+.navsection{ /*navigation section*/
+  position:absolute;
+  width:115px;
+  background-color:#37a5dd;
+  padding:0px;
+  z-index:2;
+
+}
+
+ul{ /*unordered list*/
+  padding-left:0;
+
+}
+
+li, .navlist{ /*list*/
+  list-style-type: none;
+  height:115px;
+
+
+}
+.navlist:hover, .active{
+  background-color:#2297c4;
+  border-top:1px solid #1E8CAF;
+  border-bottom:1px solid #1E8CAF;
+}
+
+a{ /*anchor tags*/
+  text-decoration: none;
+  color:#fff;
+
+}
+
+.active_icon{ /*indicates active page*/
+  position: relative;
+  display: block;
+}
+
+.imgactive{
+  position:absolute;
+  width: 14px;
+  height: 26px;
+  background-position:-108px -64px;
+  right:0;
+  top:40px;
+
+}
+
+a:hover , .nav_font{ /*list fonts*/
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size:14px;
+  color:#fff;
+  text-decoration: none;
+  text-align:center;
+
+}
+
+a:active{ /*after click on links*/
+  text-decoration: none;
+}
+
+.ag_logo{ /*agency logo*/
+  position:relative;
+  display:block ;
+  width: 85px;
+  height: 80px;
+  background-position:10px 18px;
+  margin:auto;
+  
+}
+
+.atto_logo{ /*attorney logo*/
+  position:relative;
+  display:block ;
+  width: 84px;
+  height: 72px;
+  background-position:77px 11px;
+  margin:auto;
+
+}
+
+.coun_logo{  /*counsellor logo*/
+  position:relative;
+  display:block ;
+  width: 84px;
+  height: 72px;
+  background-position:142px 11px;
+  margin:auto;
+
+}
+
+#content_head{ /*content headings*/
+  color:#787779;
+  font-size:22px;
+
+}
+
+.headings .col-sm-11{
+  padding-left:40px;
+  bottom:7px;
+}
+
+.searchicon{ /*search icon*/
+  position:absolute;
+  display:inline-block ;
+  margin-top:12px;
+  margin-left:10px;
+  width: 23px;
+  height: 23px;
+  background-position:-35px -66px;
+  float:left;
+
+}
+.border_line{ /*border line*/
+   border-bottom:1px solid #e2e2e2;
+
+}
+
+.contentsection{ /*left content section*/
+  height:auto;
+  padding-left:115px;
+  padding-right:0;
+  background-color:#37a5dd;
+
+}
+
+.addside{ /*main content section*/
+  position:relative;
+  background-color: #EFEEF3;
+  height: auto;
+  padding:15px 30px 40px 32px;
+  border-top:1px solid #e2e2e2;
+  overflow:hidden;
+}
+
+.commoncontent{ /*common white content section*/
+  padding:30px;
+  height:auto;
+  width:100%;
+  overflow:hidden;
+  margin-top:10px;
+}
+
+.imagesection{ /*add image section*/
+  max-width: 180px;
+  width:100%;
+  padding-left:25px;
+
+}
+#addnew{ /*add new component*/
+  color:#EE72A8;
+  font-weight:bold;
+  font-size:16px;
+
+}
+
+.searchfield{
+  padding-left:30px;
+}
+.content_img{ /*content image*/
+  background-image:url("../images/logo_agencies_3.png");
+  position: relative;
+  display:block;
+  float: left;
+  width:130px;
+  height:130px;
+
+}
+
+.content_list{ /*content list*/
+  position: relative;
+  width:100%;
+  margin-bottom:18px;
+  border:1px solid #e2e2e2;
+  background-color: #fff;
+  overflow:hidden;
+  cursor: pointer;
+
+}
+
+
+.detailspage{ /*listing section of attorney, counsellor and agency details*/
+  position:relative;
+  width: 100%;
+  height:auto;
+  background-color:#EFEEF3;
+}
+
+.listingcontent{ /*details content section*/
+  position:relative;
+  background-color: #EFEEF3;
+  height: auto;
+  padding:15px 30px;
+  border-top:1px solid #e2e2e2;
+  overflow:hidden;
+}
+
+.searchbar{ /*search bar in listing page*/
+  max-width: 310px;
+  width: 100%;
+  bottom:7px;
+  
+}
+
+.listingcontent .head{
+  max-width: 130px;
+  width: 100%;
+}
+
+.listingcontent .headings .col-sm-5{
+  bottom:7px;
+}
+
+.content_detail{ /*content details*/
+  position: relative;
+}
+
+.motherlove{/* heading in detail list*/
+  font-weight:bold;
+  font-size:14px;
+  color:#4e4e4e;
+  margin-top:10px;
+}
+
+.createdon{ /*created on in detail list*/
+  color:#bfbfbf;
+  margin-bottom:10px;
+
+}
+
+.go_nextpage{ /*go next page icon*/
+  position:relative;
+  display:block ;
+  width: 13px;
+  height: 22px;
+  background-position:-161px -66px;
+  float:left;
+  margin-top:55px;
+
+}
+
+#pinkribbon{ /*indicates member is sponsored*/
+  position: absolute;
+  background-image:url("../images/icon_ribbon_pink.png");
+  background-repeat: no-repeat;
+  width:15px;
+  height:25px;
+  right:17px;
+  top:0;
+}
+
+#greyribbon{ /*indicates member is not sponsored*/
+  position: absolute;
+  background-image:url("../images/icon_ribbon_gray.png");
+  background-repeat: no-repeat;
+  width:15px;
+  height:25px;
+  right:17px;
+  top:0;
+}
+
+
+#inputDescription{/*Description field - Counsellor,Attorney*/
+  resize:none;
+}
+
+#addnew_pink{ /*add new counsellors, attorneys etc pink color*/
+  color:#EFB3CD;
+
+}
+
+.headings{ /*add details heading section*/
+  margin-bottom:15px;
+
+}
+
+
+
+#addDetailsContent{ /*add details  section for counsellor and attorney*/
+  background-color:#FFFFFF;
+  width: 100%;
+  max-width: 1190px;
+  border-left: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
+
+.addname{
+  width:100%;
+  max-width:258px;
+}
+
+.lists{ /*detail tile of lists in listing page*/
+  padding-left:0;
+}
+
+.nameinput{ /*name input portion*/
+  position: relative;
+  width: 100%;
+  max-width: 345px;
+  padding-right: 113px;
+}
+
+.spons{
+  position: absolute;
+  right: 0;
+  top:30px;
+}
+
+#checkbox{ /*checkbox for sponsored in add counsellor and attorney*/
+  position:relative;
+  width:22px;
+  height:22px;
+  float:left;
+  cursor:pointer;
+  background: #fbdae8;
+
+}
+
+.is_sponsored{/* sponsored text*/
+  position: relative;
+  padding-left:5px;
+  padding-top: 5px;
+
+}
+
+#addimge{
+  position:relative;
+}
+
+#addimg{ /*add image for counsellor and attorney*/
+  background: url("../images/addAgency.jpg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width:130px;
+  height:130px;
+
+}
+
+.fileUpload input.addpicture { /*upload image input */
+  position: absolute;
+  top:0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+
+}
+
+#cancelButton{ /*cancel button*/
+  width: 155px;
+  background-color: #E5E5E5;
+  font-size: 18px;
+  color:#848484;
+
+}
+
+.footerfont{ /*footer content*/
+  color:#959595;
+  font-size:14px;
+  margin-top:10px;
+}
+
+#addnew:hover{ /*add new component*/
+  color:#EE72A8;
+  font-weight:bold;
+  font-size:16px;
+
+}
+
+#det_pic{ /* details profile pic*/
+  position: absolute;
+  width:140px;
+  height: 130px;
+
+}
+
+.det_listing{ /*list detail of each user*/
+  padding-left:160px;
+  margin:18px 0px 18px;
+}
+
+p { /*paragraph*/
+    margin: 0 0 8.5px;
+
+}
+
+.buttons{ /*common buttons*/
+  width:100%;
+  max-width:345px;
+}
+
+section{ /*child content section*/
+  width:100%;
+  height:auto;
+  background-color: #fff;
+}
+
+#childdetails{ /*detail container of child detail page*/
+  width:100%;
+
+}
+ 
+ #childpink{ /*pink header to add child*/
+    background-color: #F06BA4;
+}
+
+.childhead{ /*heading of add child section*/
+  margin-bottom:20px;
+}
+.addchild{ /*add child section*/
+  width:100%;
+  max-width:990px;
+  
+}
+
+#addchilddetails{ /*add child section content*/
+  position: relative;
+  border:1px solid #e2e2e2;
+  border-top:0;
+}
+
+#addmobheading{ /*heading of mobile preview section*/
+  color: #eaf6fc;
+  font-size: 22px;
+  line-height: 53px;
+  margin-left: 20px;
+}
+.addprev{ /*preview header of add child*/
+  margin-left:-30px;
+
+}
+
+#mobpreview{ /*mobile preview add child*/
+  background-color: #37A5DD;
+}
+
+.addchildphoto{ /*add photo content*/
+  position: relative;
+  border-bottom:1px solid #e2e2e2;
+}
+
+.addchildpic{ /*add new photo section*/
+  position: absolute;
+  left:0;
+  width:95px;
+  height:175px;
+  background-color:#EBF6FC;
+  border-right:1px solid #e2e2e2;
+  
+}
+
+.inputchildpic{ /*add photo dummy image for add child*/
+  position:absolute;
+  background: url("../images/icon_addphoto.png");
+  width:50px;
+  height:50px;
+  top:55px;
+  left:20px;
+
+}
+
+#clickforpic { /*add photo font for add child*/
+  position: absolute;
+  right: -10px;
+  top:50px;
+  color:#8C9399;
+}
+
+#mob_preview{/* mobile preview section borders*/
+  border-right:1px solid #e2e2e2;
+  border-bottom:1px solid #e2e2e2;
+}
+
+.nopreview_space{ /*no-preview section*/
+  display: table;
+  text-align:center;
+  min-height: 656px;
+  width: 100%;
+}
+
+#nopreview{ /*no preview text*/
+  font-size:14px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#desc_prev{ /*mobile preview description area*/
+  min-height:185px;
+  background-color:#EBF6FC; 
+}
+
+.childemptyfotos{ /*child preview photo space*/
+  text-align:center;
+  line-height:140px;
+}
+#addchildpage{ /*add child page entire container*/
+  position:relative;
+  height: auto;
+  padding:16px 0px 45px 30px;
+  border-top:1px solid #e2e2e2;
+
+}
+
+.detailschild{ /*detail section of add and edit page*/
+  width:100%;
+  max-width:655px;
+  padding-left:40px;
+  overflow:hidden;
+}
+
+#pinkfont{ /*pink color in add child page*/
+  color:#F06AA3;
+  margin:20px 0px 20px;
+  font-size:14px;
+}
+
+#addchildname{ /*name input field area of add and edit child*/
+  max-width:320px;
+  width:100%;
+  margin-right:13px;
+}
+
+.addchildplace{ /*city, state, etc area of add and edit child*/
+  max-width:535px;
+ 
+}
+
+.addchilddesc{ /*description area of add and edit child*/
+  max-width:655px;
+  min-height:80px;
+  margin-bottom:30px;
+
+}
+
+.childrenbtn{ 
+  max-width:328px;
+}
+
+.child_selectbox{ /*selectbox in add and edit child*/
+  max-width:95px;
+  width: 100%;
+  margin-right: 13px;
+}
+
+#publishButton{ /*publish button of add child page*/
+  width: 155px;
+  background-color: #37A5DD;
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight:bold;
+  margin-bottom: 30px;
+  padding:8px;
+}
+
+#childsavebtn{ /*save button of add child page*/
+  width: 155px;
+  background-color: #F06AA3;
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding:8px;
+}
+
+.fileUpload input.addchildfoto { /*upload image input */
+  position: absolute;
+  width: 94px;
+  height: 175px;
+  top:0;
+  left:0;
+  cursor: pointer;
+  opacity:0;
+  z-index:999;
+}
+
+
+
+#addmodalButton{  /*add button in modal*/
+  width: 130px;
+  background-color: #F06BA4;
+  font-size: 16px;
+  color: #FFFFFF;
+  
+}
+#cancelmodalButton{ /*cancel button in modal*/
+   width: 130px;
+  background-color: #E5E5E5;
+  font-size: 16px;
+  color:#848484;
+  
+}
+.abs{ /*add photo section of add and edit child*/
+  position:absolute;
+}
+
+.image_preview_space{ /*preview area of images in add and edit child*/
+  padding-left: 110px;
+  padding-top: 15px;
+  width:100%;
+  height:175px;
+  border-bottom:1px solid #e2e2e2;
+  }
+#imagetable{ /*table for add child preview images*/
+  overflow-x:auto;
+}
+
+td{ /*table column of preview images in add child*/
+  width:135px;
+  height:135px;
+}
+
+.fc_thumbnail{ /*modal image thumbnail*/
+    width: 135px;
+    height: 135px;
+    padding-right:10px;
+    cursor:pointer;
+}
+.child_listing{ /*list of each child*/
+    padding-left: 160px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+}
+
+.child_mainlist{ /*child main listing container*/
+ padding:0;
+}
+
+.child_contentlist{ /*child content container */
+   position:relative;
+  background-color: #EFEEF3;
+  height: auto;
+  padding:15px 25px 25px;
+  border-top:1px solid #e2e2e2;
+  overflow:hidden;
+}
+
+.child_det{ /*details of child*/
+  margin-bottom:3px;
+}
+#childStatus{ /*status detail of child*/
+  color:#37A5DD;
+}
+
+#childAge_pink{ /*age color in child details page*/
+  color:#F06BA4; 
+}
+.child_head{ /*lisiting page heading "children"*/
+  max-width:110px;
+}
+@media only screen and (min-width : 1300px){
+
+  #childpink{ /*pink header to add child*/
+    background-color: #F06BA4;
+    height: 52px
+  }
+
+  .listingcontent .col-sm-4{
+    padding-left:0;
+    padding-right:15px;
+  }
+
+}
+
+@media (max-width : 767px){
+  .form-check{
+    padding-top:0;
+    padding-bottom: 20px;
+  }
+  
+  #addUserDetails{
+    margin-top:40px;
+  }
+
+  .addname .col-xs-12{
+    padding-right:0;
+  }
+ 
+  .content_img{ /*content image*/
+    background-image:url("../images/logo_agencies_3.png");
+    background-repeat: no-repeat;
+    position: relative;
+    display:block;
+    float: left;
+    width:80px;
+    height:130px;
+
+  }
+
+  .addinput{ /*textbox for add counsellor and attorney*/
+    width:200px;
+    height:35px;
+
+  }
+
+  .detailpage{
+    position: relative;
+    padding-right: 0;
+  }
+
+  #cancelButton{
+     width: 40%;
+  }
+  .headings .col-xs-12{
+    clear:left;
+    text-align:left;
+  }
+  #publishButton,#childsavebtn{
+    width:40%;
+  }
+
+  .addprev{
+    margin-left:0;
+
+  }
+  #mob_preview{
+    border-left:1px solid #e2e2e2;
+  }
+
+  .detailschild{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+
+}
+
+.addAgencyContent{/*agency details*/
+  width: 1190px;
+  height: 588px;
+  background-color:#FFFFFF;
+  overflow-y:scroll;
+  position: relative;
+}
+
+
+
+.clearFloat{/*clears float*/
+  clear: both;
+}
+
+.addAgencyContent{/*agency details*/
+  width: 1190px;
+  height: 588px;
+  background-color:#FFFFFF;
+  overflow-y:scroll;
+  position: relative;
+}
+
+#pinkDiv{/*pink colored section*/
+    background-color: #F06BA4;
+    height: 52px;
+}
+
+
+
+#createdOnText{/*'Created on :' text Attorney,Agency,Counsellor*/
+  float: left;
+}
+
+.fc_formcontrol{
+  height: 40px;
+  border: 1px solid #e2e2e2;
+  width: 100%;
+}
+
+.addAgencyContent{
+  width: 1190px;
+  height: 588px;
+  background-color:#FFFFFF;
+}
+
+
+
+#sendButton{/*send button*/
+  float: right;
+  background-color: #F06BA4;
+  width: 146px;
+  color: #FFFFFF; 
+  left: -16px;
+  position: relative;
+
+}
+
+.forgotResetPswdWrapper{ /*Forgot password container DIV*/  
+    /*width: 410px;
+    height: 413px;
+    margin: auto;
+    left: -20px;
+    position: relative;
+    margin-top: 22px;
+    margin-left: -21px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);*/
+
+    
+    width: 450px;
+    height: 338px;
+    margin: -17px auto auto auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+
+}
+
+#resetPswdWrapper{
+  /*margin: 22px auto auto -21px;*/
+  margin: auto;
+  height: 498px;
+}
+
+#frgtPswdDiv{/*div with username*/
+  background-color: #FFFFFF;  
+  padding: 0;
+  margin: auto;
+  border: 0;
+  width: 308px;
+  height: 238px;
+}
+
+
+/*#adminEmail{
+  border:none;  
+}
+*/
+.fc_formcontrol::-webkit-input-placeholder {/*placeholder*/
+ color: #bcbcbc;
+ font-size: 13px; 
+}
+
+/*********************************03/11/2015 starts**********************/
+
+#phoneEmail{/*phone,new admin email*/
+  padding: 0;
+  border: 0;
+ /* width: 343px;*/
+ /* height: 177px;*/
+}
+
+
+/*.buttonMarginBtm{
+
+  margin-bottom: 50px;
+
+}
+*/
+/*#phoneMultiple{
+  float: left;
+}
+*/
+/*#phoneTrash{
+  color: #F06BA4;
+  font-size: 14px;
+  font-weight: bolder;  
+  float: right;
+  cursor: pointer;
+}*/
+
+/*#phoneTrashDiv{
+    width: 100%;
+    max-width: 340px;
+    margin-bottom: 5px;
+}
+*/
+
+
+
+
+
+#emailMultiple{/*multiple admin emails*/
+ width: 100%;
+/*height: 20px;*/
+height: 31px;
+max-width: 345px;
+
+
+color: #666666;
+    font-size: 13px;
+    font-weight: normal;
+    opacity: .9;
+
+    margin-bottom: 17px;
+}
+
+#emailTrash{/*email delete icon*/
+  color: #F06BA4;
+  font-size: 14px;
+  font-weight: bolder;  
+  float: right;
+  cursor: pointer;
+}
+
+#plusIcon{/*plus icon - add multiple admin*/
+  background: url("../images/plus.png");
+  background-repeat: no-repeat; 
+  width: 19px;
+  height: 19px;  
+  margin-top: -30px;
+  position: absolute; 
+  display: inline-block;  
+  right: 0px;
+  cursor: pointer;
+}
+
+
+
+
+.form-group {/*overwrited bootstrap*/
+    margin-bottom: 20px;
+}
+
+#addpic{ /*add image text*/
+ /* color:#fff;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  top: -4px;
+  position: relative;
+
+
+
+
+
+
+  background-color:rgba(113,127,136,.4);
+  width:130px;
+  height:40px;
+  margin-left: 20px;*/
+
+  color: #fff;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    top: -11px;
+    position: relative;
+    background-color: rgba(113,127,136,.4);
+    width: 129px;
+    height: 40px;
+    margin-left: -15px;
+    border: none;
+    
+
+}
+
+.addpic{
+  padding-left: 29px;
+}
+
+.changePic{
+  padding-left: 19px;
+}
+
+.pic_select{ /*choose image button*/
+  position:absolute;
+  /*background-color:rgba(113,127,136,.4);*/
+
+  width:130px;
+  height:40px;
+  bottom:0;
+  left:0;
+  border-radius: 0;
+
+}
+
+#adminTrashDiv{/*Agency Admin listing,trash*/
+  width: 100%;
+  margin-bottom: 5px;
+  max-width: 345px;
+
+  height: 36px;
+}
+
+#adminList{/*Agency Admin list*/
+  float: left;
+  margin-top: 7px;
+  margin-left: 9px;
+}
+
+#adminTrash{/*Trash icon -Agency*/
+  color: #F06BA4;
+  font-size: 14px;
+  font-weight: bolder;  
+  float: right;
+  cursor: pointer;
+  margin-top: 7px;
+  right: 17px;
+}
+
+#phoneAgency{/*input field -phone*/
+  width: 100%;
+  position:relative;
+ /* padding-right:30px;*/
+}
+
+
+
+
+
+#border_line {/*border below header*/
+    border-bottom: 1px solid #e2e2e2;
+    width: 100%;
+    max-width: 345px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+#borderLineBtm{/*Border at bottum of Agency Admin list*/
+  border-bottom: 1px solid #e2e2e2;
+    width: 100%;
+    max-width: 345px;
+    margin-top: 27px;
+}
+
+
+#emailMultipleTrash{/*multiple admin emails,trash*/
+ width: 100%;
+height: 20px;
+max-width: 345px;
+
+margin-bottom: 8px;
+
+
+}
+
+#mngeAgncyAdmn{/*Manage Agency Admin*/
+ 
+  top: 5px;
+  position: relative;
+  display:block;
+  margin-top: 33px;
+}
+
+#mngeAgncyAdmnText{/*"Manage Agency admin" text*/
+   font-size: 14px;
+  color: #666666;
+  font-weight: bold;
+
+}
+
+#adminTrashBorder{/*Agency Admin listing ,trash,border bottum*/
+  margin-top: 17px;
+}
+
+
+.borderLine{/*border line agency*/
+  /*border:1px solid #E8E8E8; */ 
+  border-bottom:1px solid #e2e2e2;
+  /*margin-top: 24px;*/
+  margin-top: -16px;
+  max-width: 345px;
+}
+
+
+
+#checkboxSize{/*check box input login*/
+  width: 22px;
+  height: 21px;
+  margin-top: 14px;
+
+}
+
+#agncyAdmnUL{
+  /*margin-top: 38px;*/
+  margin-bottom: 20px;
+}
+
+.agncyAdmnUL2{/*unordered listing - agency admin*/
+  margin-top: 38px;
+}
+
+.agncyAdmnUL1{
+  margin-top: -4px;
+}
+
+#admnTrash{/*Agency Admin list,trash*/
+  width: 100%;
+  max-width: 345px;
+
+
+
+  height: 22px;
+    margin-bottom: -12px;
+}
+
+
+
+
+    .validtnErrMsg{/*in dummy validation example. not needed for foster care proj*/
+      display: block;
+      max-width: 345px;
+      width: 100%;
+    }
+        
+
+
+
+#mail{/*username input under manage agency admin*/
+  /*margin-top: 62px;*/
+}
+
+
+.emailPlus{/*Agecny admin username,plus icon*/
+  width:100%;
+  max-width:345px;
+  position:relative;
+  height:40px;
+
+
+
+  margin-top: 62px;
+}
+
+
+
+.inputFieldHead{/*input field heading-Agency,Attorney,Counsellor*/
+  color: #666666;
+  font-size: 13px;
+  font-weight: normal;
+  opacity: .9;
+
+
+  border: none;
+  background-color: #ffffff;
+}
+
+
+
+#newUnameAgency{/*Add new username*/ 
+  /*margin-top:20px;*/
+  margin-bottom: 3px;
+}
+
+
+
+/*Reset password*/
+/*.ResetCancelSendBtn{
+  margin-bottom: 50px;
+}*/
+
+
+#adminLoginBody{/*admin login page*/
+  background-color: #3C6875;
+}
+
+#login{/* login*/
+  margin-top: 154px;
+  width: 410px;
+  height: 413px;
+  margin: auto;
+}
+
+
+.uname{/*username -Login*/
+  margin-top: 45px;
+}
+
+#unamePswdDivOuter{/*outer div*/
+  background-color: #FFFFFF;
+  width: 410px;
+  height: 362px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;  
+  box-shadow: 0px 4px 1px #335964; 
+
+}
+
+
+
+
+
+
+/*#checkbox{
+  float: left;
+  font-size: 12px;
+  color: #888888;
+
+}*/
+
+
+#checkboxLogin{/*checkbox,stay signed in -login page */
+  float: left;
+  font-size: 12px;
+  color: #888888;
+}
+
+#fosterText{/*text -"Foster" Login page*/
+  font-size: 48px;
+  color: #37A5DD;
+  font-family: Helvetica neue light;
+}
+
+#careText{/*text-"Care" Logisn page*/
+  font-size: 48px;
+  color: #F06AA3;
+  font-family: Helvetica neue light;
+
+}
+
+/*#emailTrashDiv{
+    width: 100%;
+    max-width: 340px;
+    margin-bottom: 5px;
+}*/
+
+
+/*#borderLineBottum{
+  border:0.09em solid #E8E8E8;
+  margin-top: 15px;
+}
+*/
+
+
+/*.whitesection{
+  border:1px solid #e2e2e2;
+  border-top:0;
+}*/
+
+
+/*#addAgencyText{
+  color: #fbdae8;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 53px;
+  margin-left: 20px;
+}
+
+*/
+
+
+
+
+/*#pinkWhiteSection{
+  width: 1190px;
+}
+*/
+/*content in agency edit*/
+/*#editAgencyContent{
+  height: 616px;
+  overflow-y:scroll;
+  position: relative;
+}
+*/
+
+/*entire details of agency*/ 
+/*#addAgencyDetails{  
+    width: 343px;  
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 211px;
+}*/
+
+/*.plusIcon{   
+    margin-top: 2px;
+    color: #F06BA4;
+    position: absolute;
+    padding-left: 12px;
+    font-weight: bolder;
+    font-size: 34px;
+    right: 0px;
+}*/
+
+/*new Agency image*/
+/*#agencyImg{
+  width: 130px;
+  height: 130px;
+  margin-left: 40px;
+  margin-top: 40px;  
+}*/
+
+/*image & Created On*/
+/*#imgCreatedOn{
+  height: 140px;
+  width: 130px;
+  float: left; 
+}*/
+
+/*Created on edit page*/
+/*#createdOn{
+  margin-left: 40px;
+}*/
+
+/*#mngeAgncyAdmnEdit{
+  top: 15px;
+  position: relative;
+}*/
+
+/*glyphicon-envelope*/
+/*.glyphEnvelope{
+  color: #F06BA4;
+  font-size: 17px;
+  font-weight: bolder;
+  display:block;
+  position: absolute;
+  right: 51px;
+}*/
+
+/*#envelopeTrashDiv{
+  width:305px;
+  height:50px;
+  position:relative;
+  margin-top: 14px;
+  margin-bottom: -36px;
+}*/
+
+/*#borderEditAgency1{
+  margin-bottom: 28px;
+  margin-top: 20px;
+  width: 157px;
+}*/
+
+/*glyphicon-trash*/
+/*.glyphTrash{
+  color: #F06BA4;
+  font-size: 14px;
+  font-weight: bolder;
+  display:block;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}*/
+
+/*
+
+#newUname{
+  margin-top:20px;
+}
+*/
+#addheading{ /*counsellor,attorney heading in pink portion*/
+  color: #fbdae8;
+  font-size: 22px;
+  line-height: 53px;
+  margin-left: 20px;
+  background-color: #F06BA4;
+  border: none;
+  height: 52px;
+}
+
+
+#emailAgency{/*add new admin*/
+  margin-bottom: 63px;
+  position:relative;
+  width: 100%;
+  padding-right: 30px;
+  margin-top: -63px;
+}
+
+
+#submitButton{/*submits data*/   
+  margin-bottom: 60px;  
+  margin-top: 4px;
+}
+
+
+
+#saveAgencyButton{/*save Agency after edit*/
+    width: 155px;
+    float: right;
+    background-color: #F06BA4;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;     
+    margin-top: 35px;    
+    height: 38px;
+    border: none;
+}
+
+.submitButton{
+  width: 155px;
+  background-color: #F06BA4;
+  font-size: 15px;
+  color: #FFFFFF;
+  height: 38px;
+  border: none;  
+}   
+
+#cancelBtn{/*cancel button - Login*/
+  float: left;
+  width: 146px;
+  right: -14px;
+  position: relative;
+}
+
+
+#creat{/*created on input field-date*/
+  border: none;
+  display: inline;
+  float: right;
+ /* margin-right: 19px;*/
+ /*margin-right: 4px;*/
+ width: 64px;
+ margin-top: -1px;
+
+ margin-right: -3px;
+ margin-top: -1px;
+}
+
+
+#createdOnDiv{/*created on -Attorney,Agency,Counsellor*/
+  /*width: 230px;*/
+  /*width: 141px;*/
+  width: 134px;
+  height: 20px;
+  margin-top: 7px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #999999;
+}
+
+
+
+#resetPswdOuter{/*reset password*/ 
+  /*height: 402px;*/
+  height: 438px;
+}
+
+
+#willSentLink{/*A link will be sent to you to...*/
+  color: #F06BA4;
+  top: 27px;
+  position: relative;
+  font-size: 14px;
+
+
+  height: 63px;
+  display: block;
+}
+
+
+.frgtPswdDivOuter{/*outer div*/
+  background-color: white;
+  width: 410px;
+  /*height: 238px;*/
+  height: 243px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  box-shadow: 0px 4px 1px #54676B;
+}
+
+
+/***************************************************************************/
+
+/*.mod_header{
+  
+   background-color: #37A5DD;
+   border-radius:5px;
+}
+
+.modal-dialog{ 
+  max-width:375px;
+}
+
+.modal-footer{
+  text-align:center;
+  border-top:0;
+  padding-bottom:35px;
+  padding-top:0px;
+}
+.caption{
+  margin: 25px;
+  max-width: 275px;
+}*/
+
+
+
+ /* .modal-dialog{
+    width:60%;
+  }*/
+
+
+
+
+
+/*.modal-body{*/ 
+  /*text-align:center;*/
+ /* margin:auto;
+  padding-bottom: 0;
+}
+*/
+/*.modalhead{*/ 
+  /*color: #fff;*/
+/*  text-align: center;
+}
+*/
+
+/********************************************************************************/
+
+
+
+
+
+
+
+
+
+/*
+color: #bcbcbc;
+    font-size: 14px;
+    width: 100%;
+    height: 43px;
+    max-width: 345px;
+    padding: 5px 12px;
+    border: 1px solid #E2E2E2*/
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{ /*///////////////////////////////////////footer section*/
+  position:relative;
+  height:35px;
+  background-color: #D7D7D9;
+
+}
+
+#contentsection{
+  min-height:700px;
+  height:auto;
+}
+
+#logincontent{
+  background-color: #3C6875;
+  height:100%;
+  min-height:700px;
+  width:100%;
+}
+
+
+/*Prevents yellowing of input fields if browser remembers some login/password*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
