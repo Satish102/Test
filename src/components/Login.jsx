@@ -64,11 +64,11 @@ var Login = React.createClass({ //Login component
         localStorage.setItem('UserName',name);  //storing username
         var type = 'AA';
         localStorage.setItem('Type',type);
-        var id=123
+        var id=123;
         var a_id=id.id;                         //stores agency id of the user (needed for child pages)
         localStorage.setItem('agencyId',a_id);
         self.history.pushState(null, '/agency')
-      }//closing of onsuccess
+      }
     });                 
   },
   
